@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/_200sdp"
+              android:layout_margin="@dimen/_20sdp"
+              android:background="@drawable/bg_dialog"
+              android:orientation="vertical"
+              android:padding="@dimen/_5sdp">
+
+    <TextView
+        android:id="@+id/alert_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_pink_bg_top"
+        android:gravity="center"
+        android:text="@string/label_title_dialog"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/_13sdp"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:text="@string/welcome_to_title"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/_12sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/_8sdp"
+        android:paddingLeft="@dimen/_14sdp"
+        android:paddingRight="@dimen/_14sdp"
+        android:paddingTop="@dimen/_50sdp">
+
+        <Button
+            android:id="@+id/button_left"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:background="@drawable/button_pink_gray_selector"
+            android:text="@string/title_confirm_detail_qr_no"
+            android:textColor="@color/pink450_color"
+            android:textStyle="bold"/>
+
+
+        <Button
+            android:id="@+id/button_right"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/button_pink_selector"
+            android:text="@string/title_confirm_detail_qr_yes"
+            android:textColor="@color/white_color"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>
